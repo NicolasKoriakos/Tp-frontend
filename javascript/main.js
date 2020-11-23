@@ -1,7 +1,11 @@
 /* Cambio de titulo */
 
+/*
+
 const myTitle = document.querySelector('h1');
 myTitle.textContent = 'Noticias final de Rusia 2018:';
+
+*/
 
 /* Cambio de imagen */
 
@@ -30,4 +34,18 @@ imagenCroacia.onclick = function(){
         imagenCroacia.setAttribute('src','images/croacia.jpg')
     }
 
+}
+
+/* Mensaje de bienvenida */
+
+let myButton = document.querySelector('button');
+let myTitle = document.querySelector('h1');
+
+function establecerNombreUsuario(){
+    let miNombreUsuario = prompt('Por favor, ingrese su nombre');
+    myTitle.textContent = 'Bienvenido, ' + miNombreUsuario;
+}
+
+myButton.onclick = function(){
+    establecerNombreUsuario();
 }
