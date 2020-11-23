@@ -1,0 +1,216 @@
+/* ESTILOS GENERALES */
+html{
+    box-sizing: border-box;
+  }
+  
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+header{
+  padding: 20px 0;
+  background: rgb(143,32,33);
+  background: linear-gradient(45deg, rgba(143,32,33,1) 0%, rgba(130,28,26,1) 93%);
+}
+
+div.contenedor{
+
+  width: 1200px;
+  margin: 0 auto;
+}
+/* LOGO */
+
+.logo img{
+  width: 1200px;
+}
+
+
+/* NAVEGACION */
+
+.navegacion{
+  background-color: rgb(28, 100, 255);
+  
+}
+
+nav{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+nav ul{
+  list-style: none;
+
+}
+
+nav ul::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+nav > ul > li{
+  float: left;
+}
+
+nav ul li a{
+  display: inline-block; 
+  width: 200px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul li a:hover{
+  background-color: rgb(241, 239, 239);
+  color: rgb(28, 100, 255);
+}
+
+nav ul ul{
+  position: absolute;
+  top: 100%;
+  background-color: rgba(28, 100, 255);
+  display: none;
+}
+
+nav ul li:hover > ul{
+  display: block;
+}
+
+nav ul li:hover{
+  background-color: rgba(28, 100, 255);
+}
+
+/* CONTENIDO */
+
+div.contenido::after{
+  content:'';
+  display: block;
+  clear: both;
+}
+
+main{
+  width: 70%;
+  float: left;
+  padding-right: 40px;
+}
+
+aside{
+  float: right;
+  width: 30%;
+  margin-top: 40px;
+}
+
+article{
+  margin-top: 40px;
+}
+
+h2{
+  color: rgba(28, 100, 255);
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+article img{
+  float: left;
+  width: 400px;
+  margin-right: 50px;
+ 
+}
+
+article p{
+  line-height: 2;
+  text-align: left;
+}
+
+.button{
+  background-color: rgba(28, 100, 255);
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 1cm;
+}
+
+aside ul{
+  list-style: none;
+}
+
+aside ul li{
+  padding: 10px 0 10px 10px;
+}
+
+aside ul li:hover{
+  background-color: rgba(28, 100, 255);
+  cursor: pointer;
+  border-radius: 1cm;
+}
+
+aside ul li a{
+  color: rgba(28, 100, 255);
+  text-decoration: none;
+}
+
+aside ul li:hover a{
+  color: white
+}
+
+
+/* Footer */
+
+footer{
+  background-color: black;
+  padding-top: 40px;
+  margin-top: 30px;
+}
+
+footer h2{
+  color: white;
+}
+
+footer .contenedor::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+div.nosotros{
+  float: left;
+  width: 30%;
+  color: white;
+
+}
+
+div.menu{
+  float: right;
+  width: 60%;
+  text-align: right;
+}
+
+footer nav{
+  width: auto;
+}
+
+footer nav ul li a{
+  width: auto;
+}
+
+p.copyright{
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
